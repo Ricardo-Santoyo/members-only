@@ -1,0 +1,44 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #0e0e10;
+  color: white;
+  font-weight: bold;
+}
+
+#title {
+  color: #a970ff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#posts {
+  padding-left: 0;
+  font-size: 18px;
+}
+
+.post {
+  list-style-type: none;
+  margin-bottom: 5%;
+  background-color: #9147ff;
+  border-radius: 15px;
+  padding: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+#navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1%;
+  margin-right: 20px;
+}
+
+a {
+  color: #a970ff;
+}

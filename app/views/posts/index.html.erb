@@ -1,0 +1,23 @@
+<h1 id="title">All Posts</h1>
+
+<ul id="posts">
+  <% @posts.each do |post| %>
+    <li class="post">
+      <% if user_signed_in? %>
+        Posted by: <%= post.user.name %><br />
+      <% end %>
+
+      <%= post.body %>
+    </li>
+  <% end %>
+</ul>
+
+<div id="navbar">
+<% if user_signed_in? %>
+  Signed In as "<%= current_user.name %>"
+  <%= link_to "Create a Post", new_post_path %>
+  <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to "Sign In", new_user_session_path %>
+<% end %>
+</div>
